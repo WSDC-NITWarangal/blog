@@ -40,9 +40,10 @@ layout: default
     </ul>
   </div>
 </div>
-
+{% include sharer.html %}
 {% if page.comments %}
 <div class="row disqus-comments">
+  <p class="text-center">Your comments are valuable to us</p>
   <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
     {% include disqus.html %}
   </div>

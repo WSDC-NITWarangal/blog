@@ -4,7 +4,7 @@
 # baseurl is the website's URL without the hostname
 
 # If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "http://WSDC-NITWarangal.github.io/blog"
+url: "http://wsdc-nitwarangal.github.io"
 baseurl: "/blog"
 
 # If you are building a GitHub project page then use these settings:
@@ -30,7 +30,7 @@ navbar-links:
   Home: ""
   About WSDC: "aboutme"
   WSDC Homepage: "http://wsdc.nitw.ac.in/"
-  
+
 # --- Footer options --- #
 
 # Change all these values or delete the ones you don't want.
@@ -40,7 +40,7 @@ author:
   email: "wsdc.nitw@gmail.com"
   facebook: wsdc.nitw  # eg. daattali
   github: WSDC-NITWarangal    # eg. daattali
- 
+
 # Select which links to show in the footer
 footer-links-active:
   rss: true
@@ -58,7 +58,7 @@ url-pretty: "wsdc.nitw.ac.in"  # eg. "deanattali.com/beautiful-jekyll"
 # --- Misc --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-#disqus: ""
+disqus: "wsdc"
 
 # Fill in your Google Analytics ID to track your website using GA
 #google_analytics: ""
@@ -66,12 +66,14 @@ url-pretty: "wsdc.nitw.ac.in"  # eg. "deanattali.com/beautiful-jekyll"
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
 # Output options (more information on Jekyll's site)
-timezone: "America/Vancouver"
+timezone: "Asia/Kolkata"
 markdown: kramdown
 highlighter: rouge
-permalink: /:year-:month-:day-:title/
+permalink: /blog/:title/
 paginate: 5
 
+gems:
+  [jekyll-paginate]
 # Default YAML values (more information on Jekyll's site)
 defaults:
   -
